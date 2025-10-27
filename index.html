@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <meta name="description" content="Portfolio de TrejoDev, Ingeniero de Software con mas de 5 años de experiencia.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Trejodev_Portfolio</title>
+
+    <link rel="icon" href="./trejodev.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <!-- Menu Encabezado -->
+   <div class="content-header">
+    <header>
+        <div class="logo">
+            <a href="">Trejo Dev</a>
+        </div>
+        <nav id="nav" >
+            <ul>
+                <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                <li><a href="#sobremi"onclick="seleccionar()">SOBRE MI</a></li>
+                <li><a href="#skills"onclick="seleccionar()">SKILLS</a></li>
+                <li><a href="#curriculum"onclick="seleccionar()">EXPERIENCIA</a></li>
+                <li><a href="#portfolio"onclick="seleccionar()">PROYECTOS</a></li>
+                <li><a href="#contacto"onclick="seleccionar()">CONTACTO</a></li>
+
+            </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+   </div>
+
+    <!-- seccion de Inicio -->
+     <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="trejodev.jpg" alt="">
+            </div>
+            <h1>Gustavo Adolfo Trejo Cruz</h1>
+            <h2>Ingeniero de Software</h2>
+            <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+        </div>
+     </section>
+
+    <!-- SECCION SOBREE MI  -->
+    <section id="sobremi" class="sobremi">
+    <div class="contenido-seccion">
+        <h2>Sobre Mi</h2>
+        <p><span>Hola, soy Gustavo Trejo. </span>Ingeniero en Desarrollo y Gestión de Software especializado en desarrollo web con React, Next.js y TypeScript, con experiencia en integración de APIs y despliegue en entornos Docker. Interesado en la aplicación de IA en desarrollo de software y automatización de procesos, con enfoque en crear soluciones escalables y centradas en la experiencia del usuario.</p>
+        <div class="fila">
+    <!-- Datos Personales -->
+        <div class="col">
+                    <h3>Datos Personales</h3>
+        <ul>
+                        <li>
+                            <strong>Direccion</strong>
+                            Atizapan de Zaragoza, EDOMEX
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                           gustavotrejo24@outlook.com
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            56-45-57-40-64
+                        </li>
+                    </ul>
+                </div>
+
+      
+    </div>
+
+     <button>
+        Descargar CV <i class="fa-solid fa-download"></i>
+        <span class="overlay"></span>
+    </button>
+
+    </div>
+
+
+    </section>
+
+    <!-- SECCION SKILLS -->
+   <section class="skills" id="skills">
+  <div class="contenido-seccion">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <!-- STACK PRINCIPAL -->
+      <div class="skill-card">
+        <h3><i class="fa-solid fa-code"></i> Stack Técnico</h3>
+        <ul>
+          <li><strong>Lenguajes:</strong> JavaScript, TypeScript, Java, Python</li>
+          <li><strong>Frameworks:</strong> React, Next.js, Angular, Vue.js</li>
+          <li><strong>Bases de datos:</strong> PostgreSQL, MySQL, MongoDB</li>
+          <li><strong>IA & Data:</strong> ChatGPT API, análisis de datos con Python, automatización con IA</li>
+        </ul>
+      </div>
+
+      <!-- HABILIDADES PROFESIONALES -->
+      <div class="skill-card">
+        <h3><i class="fa-solid fa-briefcase"></i> Habilidades Profesionales</h3>
+        <div class="soft-skills">
+          <div class="soft-skill"><i class="fa-solid fa-comments"></i> Comunicación</div>
+          <div class="soft-skill"><i class="fa-solid fa-lightbulb"></i> Autodidacta</div>
+          <div class="soft-skill"><i class="fa-solid fa-users"></i> Trabajo en equipo</div>
+          <div class="soft-skill"><i class="fa-solid fa-crown"></i> Liderazgo</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- ======== Sección Currículum ======== -->
+<section id="curriculum" class="curriculum">
+  <div class="contenido-seccion">
+    <h2 class="section-title">Currículum</h2>
+
+    <div class="timeline-container">
+      <!-- Columna izquierda (Educación) -->
+      <div class="timeline-column">
+        <h3 class="timeline-title">Educación</h3>
+
+        <div class="timeline-item">
+          <h4>Ingeniería en Desarrollo y Gestión de Software</h4>
+          <span class="institution">Universidad Tecnológica de la Huasteca Hidalguense</span>
+          <span class="date">2020 - 2024</span>
+        </div>
+
+        <div class="timeline-item">
+          <h4>TSU en Tecnologías de la Información</h4>
+          <span class="institution">Universidad Tecnológica de la Huasteca Hidalguense</span>
+          <span class="date">2020 - 2023</span>
+        </div>
+
+        <div class="timeline-item">
+          <h4>Bachillerato General</h4>
+          <span class="institution">COBAEH</span>
+          <span class="date">2017 - 2020</span>
+        </div>
+      </div>
+
+      <!-- Columna derecha (Experiencia) -->
+      <div class="timeline-column">
+        <h3 class="timeline-title">Experiencia</h3>
+
+        <div class="timeline-item">
+          <h4>Desarrollador Full Stack</h4>
+          <span class="institution">Grupo Interastar</span>
+          <span class="date">2024 - 2025</span>
+          <p>
+            Desarrollé la versión web de una aplicación móvil para coaches, 
+            mejorando la gestión de usuarios y planes personalizados. 
+            Integré APIs REST y módulos de autenticación, optimizando la comunicación 
+            entre frontend y backend con Next.js y Laravel.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <h4>Desarrollador Backend</h4>
+          <span class="institution">COMUDE Huejutla</span>
+          <span class="date">2023 - 2024</span>
+          <p>
+            Diseñé e implementé la lógica de negocio para un sistema de gestión de ligas de fútbol. 
+            Analicé y estructuré modelos de base de datos, creando endpoints API escalables según requerimientos del cliente.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <h4>Técnico en Soporte y Mantenimiento</h4>
+          <span class="institution">JYN-Electronic</span>
+          <span class="date">2022 - 2023</span>
+          <p>
+            Brindé soporte técnico y mantenimiento preventivo y correctivo a equipos electrónicos, 
+            garantizando la satisfacción y continuidad operativa de los clientes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+  <div class="contenido-seccion">
+    <h2>Portfolio</h2>
+    <div class="galeria">
+      <div class="proyecto">
+        <img src="img/appATGO.png" alt="Proyecto Web">
+        <div class="overlay">
+          <h3>Atgo Coach</h3>
+          <p>Plataforma web para coaches con gestión de usuarios y planes personalizados.</p>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <img src="img/proyecto2.avif" alt="Proyecto Web">
+        <div class="overlay">
+          <h3>Gestor de Ligas</h3>
+          <p>Sistema web con APIs para administrar equipos, ligas y resultados deportivos.</p>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <img src="img/proyecto3.avif" alt="Proyecto Web">
+        <div class="overlay">
+          <h3>RESTAURANTE</h3>
+          <p>PAGINA WEB DE UN RESTAURANTE JAPONES.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+     <!-- Sección de Contacto -->
+<section id="contacto" class="contacto">
+  <div class="contenido-seccion">
+    <h2>Contacto</h2>
+    <div class="fila">
+
+      <!-- Formulario de contacto -->
+      <div class="col formulario">
+        <form id="contact-form">
+          <input type="text" name="nombre" placeholder="Tu nombre" required>
+          <input type="tel" name="telefono" placeholder="Tu teléfono" required>
+          <input type="email" name="email" placeholder="Tu correo electrónico" required>
+          <textarea name="mensaje" rows="6" placeholder="Escribe tu mensaje..." required></textarea>
+          <button type="submit" class="btn-enviar">
+            Enviar mensaje
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+
+        <div class="botones-contacto">
+          <a href="mailto:gustavotrejo24@outlook.com" class="btn-contacto">
+            <i class="fa-solid fa-envelope"></i> Outlook
+          </a>
+          <a href="mailto:kheayft@gmail.com" class="btn-contacto">
+            <i class="fa-brands fa-google"></i> Gmail
+          </a>
+          <a href="https://wa.me/525645574064" target="_blank" class="btn-contacto whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Información de contacto -->
+      <div class="col info-contacto">
+        <iframe
+          src="https://www.google.com/maps?q=+Atizapan,+MEXICO,+México&output=embed"
+          loading="lazy"
+          allowfullscreen
+        ></iframe>
+
+        <ul class="info-lista">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Dirección: Abeto 27, La Nueva Méx.</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <span>Teléfono: 56-45-57-40-64</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email: kheayft@gmail.com</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+      <!-- Footer -->
+
+      <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+
+        </a>
+
+         <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+         </div>
+
+      </footer>
+
+<script src="./script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <nav>
+        <ul>
+            <li  class="link"><a href="#about">Sobre mi</a></li>
+            <li class="link"><a href="#experience">Experiencia</a></li>
+            <li class="link"><a href="#projects">Proyectos</a></li>
+            <li class="link"><a href="#contact">Contacto</a></li>
+            <li class="link"><a href="https://www.linkedin.com/in/gustavo-adolfo-trejo-cruz-6b1270352/"
+                target="_blank" rel="noreferrer">Linkedin</a></li>
+        </ul>
+
+    <main>
+        <p>Mas de 5 a;os de experiencia como</p> <strong>Ingeniero de software</strong>
+
+        <h2 id="experience">Experiencia</h2>
+
+        <ul>
+            <li>Uthh / 2020</li>
+            <li>Interastar - 2023 - 2024</li>
+            <li>Fuentes Mar Y Tierra - 2024 - 2025</li>
+
+        </ul>
+
+        <img
+        id="avatar"
+        src="./trejodev.jpg" alt="imagen de trejodev profesional"
+        width="200" height="200"
+        title="TrejoDev Professional Image" loading="lazy">
+
+
+        <h2 id="projects">Proyectos realizados</h2>
+
+        <aside>
+            <header>Mis Tecnologias favoritas</header>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>PHP</li>
+                <li>Node.js</li>
+            </ol>
+
+
+        </aside>
+
+        <section>
+            <article>
+            <header>
+            <h4>Sitio Web Corporativo</h4>
+            </header>
+        <p>
+            Desarrollo de un sitio web corporativo con una interfaz
+            amigable y moderna
+        </p>
+        <footer>
+            <small>Tecnologias utilizadas: Reaxtr Node.js Mongo DB</small>
+
+        </footer>
+            </article>
+
+
+        </section>
+
+        <section>
+            <details>
+                <summary>Que estudios tienes?</summary>
+                <p>Estudie en la universidad Tecnologica de la huasteca Hidalguense
+                    durante 3 años, donde obtuve mi titulo de Ingeniero en Tecnologias de la Informacion.
+                </p>
+            </details>
+            <details>
+                <summary>Cuales son tus hobbies?</summary>
+                <p> Me gusta escucar musica y jugar futbol.
+                </p>
+            </details>
+                 <details>
+                <summary>Cual es tu lenguaje favorito?</summary>
+                <p> Typescript yua que es un lenguajer fuertemente tipado
+                    y me permite detectar errores en tiempo de compilacion
+                </p>
+            </details>
+        </section>
+        <section>
+            <form method="post" action="/">
+                <fieldset>
+                    <legend>Formulario Personal</legend>
+                    <div>
+                    <label  label for="name">Nombre:</label>
+                    <input type="text"
+                    id ="name" placeholder="Gustavo"
+                    name="name"
+                    required>
+                    </div>
+                   <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email"
+                    placeholder="kheayft@gmail.com"
+                    name="email" required>
+                   </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informacion adicional</legend>
+
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" id="telefono"
+                    placeholder="5645574064" required>
+                </fieldset>
+
+                <div>
+                    <label for="terms">Aceptas Los Terminos?</label>
+                    <input type="checkbox" id="terms" name="terms" required>
+                </div>
+
+                <div>
+                    <datalist id="languajes">
+                        <option value="HTML">
+                        <option value="CSS">
+                        <option value="JavaScript">
+                        <option value="Python">
+                        <option value="Java">
+                        <option value="PHP">
+                        <option value="Node.js">
+                    </datalist>
+                    <label >Con que lenguaje quieres que te ayude?
+                        <input list="languajes" name="languajes">
+                    </label>
+                </div>
+
+                <button type="submit" >Enviar</button>
+            </form>
+        </section>
+
+    </main> -->
+
+
+
+</body>
+</html>
